@@ -1,5 +1,17 @@
+$primary: #25834a;
+$secondary: #88b06a;
+
+@import '~bootstrap/scss/bootstrap.scss';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.carousel-inner {
+    width: 850px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
