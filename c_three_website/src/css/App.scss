@@ -1,17 +1,47 @@
 $primary: #25834a;
 $secondary: #88b06a;
+$light: #e4e4e4;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body {
+  background: $light;
 }
 
+/* SlideShow - start */
 .carousel-inner {
-    width: 850px;
-    height: auto;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  .fixed-height {
+    max-height: 50px;
+  }
+  
+/* SlideShow - end */
+
+/* Card - start */
+
+.card {
+    width: 15em;
+    margin: 0 auto;
 }
+/* Card - end */
+
+/* mobile-responsive - start */
+  @media screen and (max-width: 784px) {
+    .carousel-inner {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .fixed-height {
+      max-height: 550px;
+    }
+
+    .card {
+      width: 20em;
+      margin: 0 auto;
+    }    
+  }
