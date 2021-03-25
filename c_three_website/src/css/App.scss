@@ -1,6 +1,8 @@
 $primary: #25834a;
-$secondary: #88b06a;
+$secondary: #88b06ad8;
+$secondaryHover: #88b06a;
 $light: #e4e4e4;
+$white: #ffffff;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
@@ -21,6 +23,8 @@ body {
   
 /* SlideShow - end */
 
+/* Assets - start */
+
 /* Card - start */
 
 .card {
@@ -28,6 +32,22 @@ body {
     margin: 0 auto;
 }
 /* Card - end */
+
+/* Button - start */
+
+.btn {
+  background-color: $secondary;
+  border: none;
+  color: $white;
+}
+
+.btn:hover {
+  background-color: $secondaryHover;
+  color: $white;
+}
+/* Button - end */
+
+/* Assets - end */
 
 /* mobile-responsive - start */
   @media screen and (max-width: 784px) {
@@ -44,4 +64,9 @@ body {
       width: 15em;
       margin: 0 auto;
     }    
+
+    iframe {
+      width: 490px;
+      height: 350px;
+    }
   }
