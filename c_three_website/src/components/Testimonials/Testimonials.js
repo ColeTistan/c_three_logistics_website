@@ -1,24 +1,15 @@
 import React from 'react'
+
+// import card components 
 import Card from '../../assets/Card/Card'
 
 function Testimonials() {
     return (
-      <div>
+      <div id="testimonials">
         <div className="container">
           <h4 className="text-center mt-3">Testimonials</h4>
           <div className="row mt-3">
-            <div className="col-sm">
-              <Card />
-            </div>
-            <div className="col-sm">
-              <Card />  
-            </div>  
-            <div className="col-sm">
-              <Card />  
-            </div>  
-            <div className="col-sm">
-              <Card />  
-            </div>  
+            <Card />
           </div>
           <div className="d-flex justify-content-center">
             <a 

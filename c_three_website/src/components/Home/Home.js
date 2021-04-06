@@ -1,10 +1,10 @@
 import React from 'react'
 import SlideShow from './SlideShow/SlideShow';
 
-
+// Uses slideshow component
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <SlideShow />
     </div>
   )
